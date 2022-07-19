@@ -5,12 +5,10 @@ class Student < Person
     super(age, name, parent_permission)
     @classroom = classroom
   end
-  
+
   attr_accessor :classroom
 
   def play_hooky
     "¯\(ツ)/¯"
   end
-  
 end
-
