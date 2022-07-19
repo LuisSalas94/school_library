@@ -1,5 +1,5 @@
 class Person
-  def initialize(age, name = "Unknown", parent_permission: true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.new.rand(1..1000)
     @age = age
     @name = name
@@ -19,6 +19,3 @@ class Person
     of_age? || @parent_permission
   end
 end
-
-person = Person.new(12, "Luis")
-puts person.can_use_services?
