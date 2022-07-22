@@ -3,8 +3,8 @@ require_relative './person'
 class Student < Person
   attr_accessor :classroom
 
-  def initialize(age, name = 'Unkown', parent_permission: true)
-    super(age, name, parent_permission)
+  def initialize(age, name = 'Unkown', parent_permission =  'true', id = Random.rand(1..1000))
+    super(age, name, parent_permission, id)
   end
 
   def play_hooky
